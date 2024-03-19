@@ -22,7 +22,9 @@
      */
   
     /* gradient */
-  
+    --primary-color: #333;
+    --secondary-color: #fff;
+
     --bg-gradient-onyx: linear-gradient(
       to bottom right, 
       hsl(240, 1%, 25%) 3%, 
@@ -111,7 +113,23 @@
   
   }
   
-  
+  [color-mode="light"] {
+  --primary-color: #333;
+  --secondary-color: #fff;
+}
+
+[color-mode="dark"] {
+  --primary-color: #fff;
+  --secondary-color: #333;
+}
+
+.element {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
   
   
   

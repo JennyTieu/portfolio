@@ -15,6 +15,15 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
 
+// color toggle
+const radioButtons = document.querySelectorAll('input[name="color-mode"]');
+const element = document.querySelector('.element');
+
+radioButtons.forEach(radioButton => {
+  radioButton.addEventListener('change', function() {
+    element.setAttribute('color-mode', this.value);
+  });
+});
 
 
 
