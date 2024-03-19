@@ -30,23 +30,22 @@
   <!--
     - #MAIN
   -->
+  <header>
+    <label class="switch">
+      <input type="radio" name="color-mode" id="color-mode-light" value="light">
+      <label for="color-mode-light">Light Mode</label>
 
+      <input type="radio" name="color-mode" id="color-mode-dark" value="dark" checked>
+      <label for="color-mode-dark">Dark Mode</label>
+      <span class="slider round"></span>
+    </label>
+  </header>
   <main>
 
     <!--
       - #SIDEBAR
     -->
-    <header>
-      <div>
-        <input type="radio" name="color-mode" id="color-mode-light" value="light">
-        <label for="color-mode-light">Light Mode</label>
 
-        <input type="radio" name="color-mode" id="color-mode-dark" value="dark" checked>
-        <label for="color-mode-dark">Dark Mode</label>
-
-        <div class="element" color-mode="light">Content</div>
-      </div>
-    </header>
 
     <aside class="sidebar" data-sidebar>
 
