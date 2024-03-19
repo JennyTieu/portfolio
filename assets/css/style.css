@@ -111,6 +111,11 @@
     --secondary-color: #333;
 }
 
+.toggleHeader {
+    text-align: center;
+    color: white;
+}
+
 .element {
     display: grid;
     place-items: center;
@@ -119,7 +124,7 @@
     background-color: var(--secondary-color);
 }
 
-  
+
 .switch {
     position: relative;
     display: inline-block;
