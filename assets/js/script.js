@@ -20,9 +20,9 @@ const toggleSwitch = document.querySelector('input[name=color-mode]');
 
 toggleSwitch.addEventListener(function switchTheme() {
   if (toggleSwitch.checked) {
-    document.documentElement.setAttribute('data-theme', 'dark');
+    document.documentElement.setAttribute('color-scheme', 'dark');
   } else {
-    document.documentElement.setAttribute('data-theme', 'light');
+    document.documentElement.setAttribute('color-scheme', 'light');
   }
 })
 
