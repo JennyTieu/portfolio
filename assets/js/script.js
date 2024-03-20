@@ -25,12 +25,7 @@ toggleSwitch.addEventListener(function switchTheme() {
     document.documentElement.setAttribute('data-theme', 'light');
   }
 })
-let trans = () => {
-  document.documentElement.classList.add('transition');
-  window.setTimeout(() => {
-      document.documentElement.classList.remove('transition')
-  }, 1000)
-}
+
 
 
 // custom select variables
