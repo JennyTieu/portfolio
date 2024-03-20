@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" class="light">
 
 <head>
   <meta charset="UTF-8">
@@ -36,7 +36,14 @@
         <input type="checkbox" name="color-mode" checked>
         <span class="slider round"></span>
       </label> -->
-    <button type="button" data-theme-toggle aria-label="Change to light theme">Change to light theme</button>
+      <div class="toggle-container">
+        <button class="theme-btn light" onclick="setTheme('light')" title="Light mode">
+          <img src="https://assets.codepen.io/210284/sun.png" alt="sun">
+        </button>
+        <button class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
+          <img src="https://assets.codepen.io/210284/moon.png" alt="moon">
+        </button>
+      </div>
 
   </header>
   <main>
