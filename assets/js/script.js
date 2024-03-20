@@ -16,15 +16,21 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 
 
 // color toggle
-const toggle = document.querySelectorAll('input[name="color-mode"]');
-const element = document.querySelector('.element');
+const toggleSwitch = document.querySelector('input[name=color-mode]');
 
-toggle.forEach(toggle => {
-  toggle.addEventListener('change', function() {
-    element.setAttribute('color-mode', this.value);
-  });
-});
-
+toggleSwitch.addEventListener(function switchTheme() {
+  if (toggleSwitch.checked) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})
+let trans = () => {
+  document.documentElement.classList.add('transition');
+  window.setTimeout(() => {
+      document.documentElement.classList.remove('transition')
+  }, 1000)
+}
 
 
 // custom select variables
