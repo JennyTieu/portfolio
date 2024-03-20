@@ -111,19 +111,14 @@
     --secondary-color: #333;
 }
 
-.toggleHeader {
+.element {
     padding-top: 30px;
     padding: 10px;
     text-align: center;
-}
-
-.element {
-    display: grid;
-    place-items: center;
-    height: 100vh;
     color: var(--primary-color);
     background-color: var(--secondary-color);
 }
+
 
 
 .switch {
