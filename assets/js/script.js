@@ -15,7 +15,7 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
 
-const setTheme = theme => document.documentElement.className = theme;
+const setTheme = function(theme) {document.documentElement.className = theme;}
 /* // color toggle
 const toggleSwitch = document.querySelector('input[name=color-mode]');
 const root = document.querySelector(':root');
