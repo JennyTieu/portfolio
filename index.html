@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -30,28 +30,28 @@
   <!--
     - #MAIN
   -->
+  <header>
 
+    <!-- <label class="switch">
+        <input type="checkbox" name="color-mode" checked>
+        <span class="slider round"></span>
+      </label> -->
+    <div class="toggle-container">
+      <button class="theme-btn light" onclick="setTheme('light')" title="Light mode">
+        <ion-icon name="sunny" size="large" color="light"></ion-icon>
+      </button>
+      <button class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
+        <ion-icon name="moon" size="large" color="black"></ion-icon>
+      </button>
+    </div>
+
+  </header>
   <main>
 
     <!--
       - #SIDEBAR
     -->
-    <header>
 
-      <!-- <label class="switch">
-        <input type="checkbox" name="color-mode" checked>
-        <span class="slider round"></span>
-      </label> -->
-      <div class="toggle-container">
-        <button class="theme-btn light" onclick="setTheme('light')" title="Light mode">
-          <ion-icon name="sunny" size="large" color="white"></ion-icon>
-        </button>
-        <button class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
-          <ion-icon name="moon" size="large" color="black"></ion-icon>
-        </button>
-      </div>
-
-    </header>
 
     <aside class="sidebar" data-sidebar>
 
