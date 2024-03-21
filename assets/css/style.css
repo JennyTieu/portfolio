@@ -183,6 +183,9 @@
 
 }
 
+.element {
+    max-width: 40px;
+}
 
 .toggle-container {
     position: relative;
@@ -218,9 +221,7 @@
 
 
 
-.element {
-    max-width: 40px;
-}
+
 
 
 
