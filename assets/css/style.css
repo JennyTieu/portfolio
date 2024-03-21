@@ -221,8 +221,6 @@
 element {
     padding: 10px;
     text-align: center;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
 }
 
 
