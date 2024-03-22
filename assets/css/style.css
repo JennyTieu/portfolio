@@ -196,6 +196,7 @@
     position: relative;
     display: inline-block;
     margin: 0 5px;
+    text-align:center;
 }
 
 .language-switch>span {
@@ -211,11 +212,11 @@
     text-align: center;
 }
 
-input.check-toggle-round-flat:checked~.off {
+input.check-language-toggle-round-flat:checked~.off {
     color: hsl(281, 100%, 72%);
 }
 
-input.check-toggle-round-flat:checked~.on {
+input.check-language-toggle-round-flat:checked~.on {
     color: #fff;
 }
 
@@ -225,19 +226,19 @@ input.check-toggle-round-flat:checked~.on {
     color: hsl(281, 100%, 72%);
 }
 
-.languag-switch>span.off {
+.language-switch>span.off {
     right: 0;
     padding-right: 4px;
     color: #fff;
 }
 
-.check-toggle {
+.check-language-toggle {
     position: absolute;
     margin-left: -9999px;
     visibility: hidden;
 }
 
-.check-toggle+label {
+.check-language-toggle+label {
     display: block;
     position: relative;
     cursor: pointer;
@@ -248,7 +249,7 @@ input.check-toggle-round-flat:checked~.on {
     user-select: none;
 }
 
-input.check-toggle-round-flat+label {
+input.check-language-toggle-round-flat+label {
     padding: 2px;
     width: 97px;
     height: 35px;
@@ -260,14 +261,14 @@ input.check-toggle-round-flat+label {
     border-radius: 60px;
 }
 
-input.check-toggle-round-flat+label:before,
-input.check-toggle-round-flat+label:after {
+input.check-language-toggle-round-flat+label:before,
+input.check-language-toggle-round-flat+label:after {
     display: block;
     position: absolute;
     content: "";
 }
 
-input.check-toggle-round-flat+label:before {
+input.check-language-toggle-round-flat+label:before {
     top: 2px;
     left: 2px;
     bottom: 2px;
@@ -280,7 +281,7 @@ input.check-toggle-round-flat+label:before {
     border-radius: 60px;
 }
 
-input.check-toggle-round-flat+label:after {
+input.check-language-toggle-round-flat+label:after {
     top: 4px;
     left: 4px;
     bottom: 4px;
@@ -297,9 +298,9 @@ input.check-toggle-round-flat+label:after {
     transition: margin 0.2s;
 }
 
-input.check-toggle-round-flat:checked+label {}
+input.check-language-toggle-round-flat:checked+label {}
 
-input.check-toggle-round-flat:checked+label:after {
+input.check-language-toggle-round-flat:checked+label:after {
     margin-left: 44px;
 }
 
