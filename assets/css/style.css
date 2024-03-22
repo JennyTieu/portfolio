@@ -34,7 +34,7 @@
     --text-gradient-yellow: linear-gradient(to right, hsl(281, 100%, 72%), hsl(271, 100%, 68%));
 
     /* solid */
-
+    --navbarcolor: hsla(290, 31%, 77%, 0.75);
     --jet: hsl(281deg 3% 83.11%);
     /*outline of big containers*/
     --onyx: hsl(0deg 0% 93.06%);
@@ -127,7 +127,7 @@
             hsl(271, 100%, 68%));
 
     /* solid */
-
+    --navbarcolor: hsla(240, 1%, 17%, 0.75);
     --jet: hsl(0, 0%, 22%);
     --onyx: hsl(240, 1%, 17%);
     --eerie-black-1: hsl(240, 2%, 13%);
@@ -684,7 +684,7 @@ main {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: hsla(240, 1%, 17%, 0.75);
+    background: var(--navbarcolor);
     backdrop-filter: blur(10px);
     border: 1px solid var(--jet);
     border-radius: 12px 12px 0 0;
