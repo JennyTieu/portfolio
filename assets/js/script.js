@@ -36,11 +36,13 @@ const deTexts = document.querySelectorAll("[deText]");
 
 for(let i=0; i<engTexts.length;i++){
   if(x.checked){
+    console.print("checked");
     deTexts[i].style.display = "none"
     engTexts[i].style.display = "block"
   } else {
     engTexts[i].style.display = "none"
     deTexts[i].style.display = "block"
+    console.print("unchecked");
   }
 }
 
