@@ -35,7 +35,7 @@ const deTexts = document.querySelectorAll("[deText]");
 
 x.addEventListener('change', function () {
   for (let i = 0; i < engTexts.length; i++) {
-    if (this.checked) {
+    if (x.checked) {
       console.log("checked");
       deTexts[i].style.display = "none"
       engTexts[i].style.display = "block"
