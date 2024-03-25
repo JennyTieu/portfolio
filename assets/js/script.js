@@ -35,13 +35,13 @@ const deTexts = document.querySelectorAll("[deText]");
 
 x.addEventListener('change', function () {
   for (let i = 0; i < engTexts.length; i++) {
-    if (x.ariaChecked) {
+    if (x.checked) {
+      deTexts[i].style.display = "none";
+      engTexts[i].style.display = "block";
       console.log("checked");
-      deTexts[i].style.display = "none"
-      engTexts[i].style.display = "block"
     } else {
-      engTexts[i].style.display = "none"
-      deTexts[i].style.display = "block"
+      engTexts[i].style.display = "none";
+      deTexts[i].style.display = "block";
       console.log("unchecked");
     }
   }
