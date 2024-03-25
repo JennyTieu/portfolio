@@ -35,7 +35,7 @@ const deTexts = document.querySelectorAll("[deText]");
 
 
 for(let i=0; i<engTexts.length;i++){
-  if(x.ariaChecked){
+  if(x.checked){
     deTexts[i].style.display = "none"
     engTexts[i].style.display = "block"
   } else {
