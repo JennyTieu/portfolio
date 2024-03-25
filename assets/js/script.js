@@ -33,10 +33,7 @@ const x = document.getElementById("language-toggle");
 const engTexts = document.querySelectorAll("[engText]");
 const deTexts = document.querySelectorAll("[deText]");
 
-for (let i = 0; i < engTexts.length; i++) {
-  deTexts[i].style.display = "none";
-  engTexts[i].style.display = "block";
-}
+
 
 x.addEventListener('change', function () {
   for (let i = 0; i < engTexts.length; i++) {
