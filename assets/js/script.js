@@ -15,7 +15,7 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
 
-const setTheme = function(theme) {document.documentElement.className = theme;}
+const setTheme = function (theme) { document.documentElement.className = theme; }
 /* // color toggle
 const toggleSwitch = document.querySelector('input[name=color-mode]');
 const root = document.querySelector(':root');
@@ -27,6 +27,22 @@ toggleSwitch.addEventListener(function switchTheme() {
     root.style.set('light-mode');
   }
 }) */
+
+
+const x = document.getElementById("language-toggle");
+const engTexts = document.querySelectorAll("[engText]");
+const deTexts = document.querySelectorAll("[deText]");
+
+
+for(let i=0; i<engTexts.length;i++){
+  if(x.ariaChecked){
+    deTexts[i].style.display = "none"
+    engTexts[i].style.display = "block"
+  } else {
+    engTexts[i].style.display = "none"
+    deTexts[i].style.display = "block"
+  }
+}
 
 
 
