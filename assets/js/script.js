@@ -33,19 +33,19 @@ const x = document.getElementById("language-toggle");
 const engTexts = document.querySelectorAll("[engText]");
 const deTexts = document.querySelectorAll("[deText]");
 
-
-for(let i=0; i<engTexts.length;i++){
-  if(x.ariaChecked){
-    console.log("checked");
-    deTexts[i].style.display = "none"
-    engTexts[i].style.display = "block"
-  } else {
-    engTexts[i].style.display = "none"
-    deTexts[i].style.display = "block"
-    console.log("unchecked");
+x.addEventListener('change', function () {
+  for (let i = 0; i < engTexts.length; i++) {
+    if (this.checked) {
+      console.log("checked");
+      deTexts[i].style.display = "none"
+      engTexts[i].style.display = "block"
+    } else {
+      engTexts[i].style.display = "none"
+      deTexts[i].style.display = "block"
+      console.log("unchecked");
+    }
   }
-}
-
+})
 
 
 // custom select variables
