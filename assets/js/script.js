@@ -33,16 +33,24 @@ const x = document.getElementById("language-toggle");
 const engTexts = document.querySelectorAll("[engText]");
 const deTexts = document.querySelectorAll("[deText]");
 
+for (let i = 0; i < engTexts.length; i++) {
+  if (x.checked) {
+    engTexts[i].style.display = "none";
+    deTexts[i].style.display = "block";
+  } else {
+    deTexts[i].style.display = "none";
+    engTexts[i].style.display = "block";
+  }
+}
+
 x.addEventListener('change', function () {
   for (let i = 0; i < engTexts.length; i++) {
     if (x.checked) {
-      deTexts[i].style.display = "none";
-      engTexts[i].style.display = "block";
-      console.log("checked");
-    } else {
       engTexts[i].style.display = "none";
       deTexts[i].style.display = "block";
-      console.log("unchecked");
+    } else {
+      deTexts[i].style.display = "none";
+      engTexts[i].style.display = "block";
     }
   }
 })
