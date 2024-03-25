@@ -34,13 +34,8 @@ const engTexts = document.querySelectorAll("[engText]");
 const deTexts = document.querySelectorAll("[deText]");
 
 for (let i = 0; i < engTexts.length; i++) {
-  if (x.checked) {
-    engTexts[i].style.display = "none";
-    deTexts[i].style.display = "block";
-  } else {
-    deTexts[i].style.display = "none";
-    engTexts[i].style.display = "block";
-  }
+  deTexts[i].style.display = "none";
+  engTexts[i].style.display = "block";
 }
 
 x.addEventListener('change', function () {
