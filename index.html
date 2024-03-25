@@ -566,10 +566,9 @@
 
 
 
-        <section class="contact-form">
+        <section class="contact-form" engText>
 
-          <h3 class="h3 form-title" engText>Contact Form</h3>
-          <h3 class="h3 form-title" deText>Kontakt Formular</h3>
+          <h3 class="h3 form-title" >Contact Form</h3>
 
           <form action="#" class="form" data-form>
 
@@ -583,8 +582,29 @@
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
-              <span engText>Send Message</span>
-              <span deText>Nachricht senden</span>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+        <section class="contact-form" deText>
+
+          <h3 class="h3 form-title" >Kontakt Formular</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Vor- und Nachname" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email Adresse" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Deine Nachricht" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Nachricht senden</span>
             </button>
 
           </form>
