@@ -109,19 +109,38 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 
 // contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
+const engform = document.querySelector("[data-form-eng]");
+const engformInputs = document.querySelectorAll("[data-form-input-eng]");
+const engformBtn = document.querySelector("[data-form-btn-eng]");
 
 // add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
+for (let i = 0; i < engformInputs.length; i++) {
+  engformInputs[i].addEventListener("eng-input", function () {
 
     // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
+    if (engform.checkValidity()) {
+      engformBtn.removeAttribute("disabled");
     } else {
-      formBtn.setAttribute("disabled", "");
+      engformBtn.setAttribute("disabled", "");
+    }
+
+  });
+}
+
+// contact form variables
+const deform = document.querySelector("[data-form-de]");
+const deformInputs = document.querySelectorAll("[data-form-input-de]");
+const deformBtn = document.querySelector("[data-form-btn-de]");
+
+// add event to all form input field
+for (let i = 0; i < deformInputs.length; i++) {
+  deformInputs[i].addEventListener("de-input", function () {
+
+    // check form validation
+    if (deform.checkValidity()) {
+      deformBtn.removeAttribute("disabled");
+    } else {
+      deformBtn.setAttribute("disabled", "");
     }
 
   });
@@ -150,3 +169,4 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
