@@ -115,7 +115,7 @@ const engformBtn = document.querySelector("[data-form-btn-eng]");
 
 // add event to all form input field
 for (let i = 0; i < engformInputs.length; i++) {
-  engformInputs[i].addEventListener("eng-input", function () {
+  engformInputs[i].addEventListener("input", function () {
 
     // check form validation
     if (engform.checkValidity()) {
@@ -134,7 +134,7 @@ const deformBtn = document.querySelector("[data-form-btn-de]");
 
 // add event to all form input field
 for (let i = 0; i < deformInputs.length; i++) {
-  deformInputs[i].addEventListener("de-input", function () {
+  deformInputs[i].addEventListener("input", function () {
 
     // check form validation
     if (deform.checkValidity()) {
