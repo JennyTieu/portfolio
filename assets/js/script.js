@@ -14,26 +14,13 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
-
+//Dark- and Light-Theme toggle
 const setTheme = function (theme) { document.documentElement.className = theme; }
-/* // color toggle
-const toggleSwitch = document.querySelector('input[name=color-mode]');
-const root = document.querySelector(':root');
 
-toggleSwitch.addEventListener(function switchTheme() {
-  if (toggleSwitch.checked) {
-    root.style.setAttribute('dark-mode')
-  } else {
-    root.style.set('light-mode');
-  }
-}) */
-
-
+//Language Toggle
 const x = document.getElementById("language-toggle");
 const engTexts = document.querySelectorAll("[engText]");
 const deTexts = document.querySelectorAll("[deText]");
-
-
 
 x.addEventListener('change', function () {
   for (let i = 0; i < engTexts.length; i++) {
@@ -106,26 +93,6 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 }
 
-
-
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
-
-  });
-}
 
 
 
