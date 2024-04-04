@@ -118,7 +118,7 @@
     --bg-gradient-hover: linear-gradient(to bottom right,
             hsl(281, 100%, 71%) 0%,
             hsla(36, 100%, 69%, 0) 50%);
-    --hover-highlight: linear-gradient(135deg, hsl(306.52deg 63.8% 91.71% / 25.1%) 0%, hsl(290.77deg 100% 83.01% / 0%) 59.86%), hsl(295.49deg 27.08% 91.56%);
+    --hover-highlight: linear-gradient(135deg, hsl(306.52deg 63.8% 91.71% / 25.1%) 0%, hsl(290.77deg 100% 83.01% / 0%) 59.86%), hsl(240, 2%, 13%);
     --border-gradient-container: linear-gradient(to bottom right,
             hsl(0, 0%, 25%) 0%,
             hsla(0, 0%, 25%, 0) 50%);
