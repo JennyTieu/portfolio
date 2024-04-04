@@ -29,34 +29,34 @@
     --primary-color: #fff;
     --secondary-color: #333;
     --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
-    --bg-gradient-jet: #EAE6EE;
-    --bg-gradient-yellow-1: linear-gradient(to bottom right, hsl(281, 100%, 71%) 0%, hsla(36, 100%, 69%, 0) 50%);
-    --bg-gradient-yellow-2: linear-gradient(135deg, hsla(45, 100%, 71%, 0.251) 0%, hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
-    --border-gradient-onyx: 0;
-    --text-gradient-yellow: linear-gradient(to right, hsl(281, 100%, 72%), hsl(271, 100%, 68%));
+    --bg-gradient-container: #EAE6EE;
+    --bg-gradient-hover: linear-gradient(to bottom right, hsl(281, 100%, 71%) 0%, hsla(36, 100%, 69%, 0) 50%);
+    --hover-highlight: linear-gradient(135deg, hsl(306.52deg 63.8% 91.71% / 25.1%) 0%, hsl(290.77deg 100% 83.01% / 0%) 59.86%), hsl(295.49deg 27.08% 91.56%);
+    --border-gradient-container: 0;
+    --text-gradient: linear-gradient(to right, hsl(281, 100%, 72%), hsl(271, 100%, 68%));
 
     /* solid */
     --navbarcolor: #EAE6EE;
     --jet: hsl(281deg 3% 83.11%);
     /*outline of big containers*/
-    --onyx: hsl(0deg 0% 93.06%);
+    --single-container: hsl(0deg 0% 93.06%);
     /*container color of job title*/
-    --eerie-black-1: #EAE6EE;
-    --eerie-black-2: hsla(0, 0%, 100%, 0.856);
+    --icon-container: #EAE6EE;
+    --main-content-container: hsla(0, 0%, 100%, 0.856);
     /*background of big containers*/
-    --smoky-black: #DEE4EB;
+    --background-color: #DEE4EB;
     /*background*/
-    --white-1: hsl(0, 0%, 2%);
+    --job-title-color: hsl(0, 0%, 2%);
     /*job decsr text color*/
-    --white-2: hsl(0, 0%, 0%);
+    --text-color-1: hsl(0, 0%, 0%);
     /*name, header etc text color*/
-    --orange-yellow-crayola: hsl(281deg 94.19% 30.89%);
+    --highlight-color: hsl(281deg 94.19% 30.89%);
     /*point color text*/
-    --vegas-gold: hsl(281, 54%, 58%);
+    --time-line-hi: hsl(281, 54%, 58%);
     /*dates textcolor*/
-    --light-gray: hsl(0deg 0% 13.53%);
+    --nav-text-color: hsl(0deg 0% 13.53%);
     /*normal tzextcolor*/
-    --light-gray-70:#000;
+    --text-color-2:#000;
     /*portfolio textcolor for application/web devel.*/
     --bittersweet-shimmer: hsl(0, 43%, 51%);
 
@@ -112,35 +112,35 @@
     --bg-gradient-onyx: linear-gradient(to bottom right,
             hsl(240, 1%, 25%) 3%,
             hsl(0, 0%, 19%) 97%);
-    --bg-gradient-jet: linear-gradient(to bottom right,
+    --bg-gradient-container: linear-gradient(to bottom right,
             hsla(240, 1%, 18%, 0.251) 0%,
             hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
-    --bg-gradient-yellow-1: linear-gradient(to bottom right,
+    --bg-gradient-hover: linear-gradient(to bottom right,
             hsl(281, 100%, 71%) 0%,
             hsla(36, 100%, 69%, 0) 50%);
-    --bg-gradient-yellow-2: linear-gradient(135deg,
+    --hover-highlight: linear-gradient(135deg,
             hsla(45, 100%, 71%, 0.251) 0%,
             hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
-    --border-gradient-onyx: linear-gradient(to bottom right,
+    --border-gradient-container: linear-gradient(to bottom right,
             hsl(0, 0%, 25%) 0%,
             hsla(0, 0%, 25%, 0) 50%);
-    --text-gradient-yellow: linear-gradient(to right,
+    --text-gradient: linear-gradient(to right,
             hsl(281, 100%, 72%),
             hsl(271, 100%, 68%));
 
     /* solid */
     --navbarcolor: hsla(240, 1%, 17%, 0.75);
     --jet: hsl(0, 0%, 22%);
-    --onyx: hsl(240, 1%, 17%);
-    --eerie-black-1: hsl(240, 2%, 13%);
-    --eerie-black-2: hsl(240, 2%, 12%);
-    --smoky-black: hsl(0, 0%, 7%);
-    --white-1: hsl(0, 0%, 100%);
-    --white-2: hsl(0, 0%, 98%);
-    --orange-yellow-crayola: hsl(281, 100%, 72%);
-    --vegas-gold: hsl(281, 54%, 58%);
-    --light-gray: hsl(0, 0%, 84%);
-    --light-gray-70: hsla(0, 0%, 84%, 0.7);
+    --single-container: hsl(240, 1%, 17%);
+    --icon-container: hsl(240, 2%, 13%);
+    --main-content-container: hsl(240, 2%, 12%);
+    --background-color: hsl(0, 0%, 7%);
+    --job-title-color: hsl(0, 0%, 100%);
+    --text-color-1: hsl(0, 0%, 98%);
+    --highlight-color: hsl(281, 100%, 72%);
+    --time-line-hi: hsl(281, 54%, 58%);
+    --nav-text-color: hsl(0, 0%, 84%);
+    --text-color-2: hsla(0, 0%, 84%, 0.7);
     --bittersweet-shimmer: hsl(0, 43%, 51%);
 
     /**
@@ -451,12 +451,12 @@ textarea {
 }
 
 ::selection {
-    background: var(--orange-yellow-crayola);
-    color: var(--smoky-black);
+    background: var(--highlight-color);
+    color: var(--background-color);
 }
 
 :focus {
-    outline-color: var(--orange-yellow-crayola);
+    outline-color: var(--highlight-color);
 }
 
 html {
@@ -464,7 +464,7 @@ html {
 }
 
 body {
-    background: var(--smoky-black);
+    background: var(--background-color);
 }
 
 
@@ -477,7 +477,7 @@ body {
 
 .sidebar,
 article {
-    background: var(--eerie-black-2);
+    background: var(--main-content-container);
     border: 1px solid var(--jet);
     border-radius: 20px;
     padding: 15px;
@@ -494,7 +494,7 @@ article {
 
 .icon-box {
     position: relative;
-    background: var(--border-gradient-onyx);
+    background: var(--border-gradient-container);
     width: 30px;
     height: 30px;
     border-radius: 8px;
@@ -502,7 +502,7 @@ article {
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    color: var(--orange-yellow-crayola);
+    color: var(--highlight-color);
     box-shadow: var(--shadow-1);
     z-index: 1;
 }
@@ -511,7 +511,7 @@ article {
     content: "";
     position: absolute;
     inset: 1px;
-    background: var(--eerie-black-1);
+    background: var(--icon-container);
     border-radius: inherit;
     z-index: -1;
 }
@@ -543,7 +543,7 @@ article.active {
 .h3,
 .h4,
 .h5 {
-    color: var(--white-2);
+    color: var(--text-color-1);
     text-transform: capitalize;
 }
 
@@ -576,7 +576,7 @@ article.active {
     left: 0;
     width: 30px;
     height: 3px;
-    background: var(--text-gradient-yellow);
+    background: var(--text-gradient);
     border-radius: 3px;
 }
 
@@ -588,12 +588,12 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
-    background: var(--onyx);
+    background: var(--single-container);
     border-radius: 5px;
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-    background: var(--orange-yellow-crayola);
+    background: var(--highlight-color);
     border-radius: 5px;
 }
 
@@ -603,7 +603,7 @@ article.active {
 
 .content-card {
     position: relative;
-    background: var(--border-gradient-onyx);
+    background: var(--border-gradient-container);
     padding: 15px;
     padding-top: 45px;
     border-radius: 14px;
@@ -616,7 +616,7 @@ article.active {
     content: "";
     position: absolute;
     inset: 1px;
-    background: var(--bg-gradient-jet);
+    background: var(--bg-gradient-container);
     border-radius: inherit;
     z-index: -1;
 }
@@ -668,7 +668,7 @@ main {
 }
 
 .info-content .name {
-    color: var(--white-2);
+    color: var(--text-color-1);
     font-size: var(--fs-3);
     font-weight: var(--fw-500);
     letter-spacing: -0.25px;
@@ -676,8 +676,8 @@ main {
 }
 
 .info-content .title {
-    color: var(--white-1);
-    background: var(--onyx);
+    color: var(--job-title-color);
+    background: var(--single-container);
     font-size: var(--fs-8);
     font-weight: var(--fw-300);
     width: max-content;
@@ -691,8 +691,8 @@ main {
     right: -15px;
     border-radius: 0 15px;
     font-size: 13px;
-    color: var(--orange-yellow-crayola);
-    background: var(--border-gradient-onyx);
+    color: var(--highlight-color);
+    background: var(--border-gradient-container);
     padding: 10px;
     box-shadow: var(--shadow-2);
     transition: var(--transition-1);
@@ -704,19 +704,19 @@ main {
     position: absolute;
     inset: 1px;
     border-radius: inherit;
-    background: var(--bg-gradient-jet);
+    background: var(--bg-gradient-container);
     transition: var(--transition-1);
     z-index: -1;
 }
 
 .info_more-btn:hover,
 .info_more-btn:focus {
-    background: var(--bg-gradient-yellow-1);
+    background: var(--bg-gradient-hover);
 }
 
 .info_more-btn:hover::before,
 .info_more-btn:focus::before {
-    background: var(--bg-gradient-yellow-2);
+    background: var(--hover-highlight);
 }
 
 .info_more-btn span {
@@ -753,14 +753,14 @@ main {
 }
 
 .contact-title {
-    color: var(--light-gray-70);
+    color: var(--text-color-2);
     font-size: var(--fs-8);
     text-transform: uppercase;
     margin-bottom: 2px;
 }
 
 .contact-info :is(.contact-link, time, address) {
-    color: var(--white-2);
+    color: var(--text-color-1);
     font-size: var(--fs-7);
 }
 
@@ -778,13 +778,13 @@ main {
 }
 
 .social-item .social-link {
-    color: var(--light-gray-70);
+    color: var(--text-color-2);
     font-size: 18px;
 }
 
 
 .social-item .social-link:hover {
-    color: var(--light-gray);
+    color: var(--nav-text-color);
 }
 
 
@@ -817,7 +817,7 @@ main {
 }
 
 .navbar-link {
-    color: var(--light-gray);
+    color: var(--nav-text-color);
     font-size: var(--fs-8);
     padding: 20px 7px;
     transition: color var(--transition-1);
@@ -825,11 +825,11 @@ main {
 
 .navbar-link:hover,
 .navbar-link:focus {
-    color: var(--light-gray-70);
+    color: var(--text-color-2);
 }
 
 .navbar-link.active {
-    color: var(--orange-yellow-crayola);
+    color: var(--highlight-color);
 }
 
 
@@ -845,7 +845,7 @@ main {
 }
 
 .about-text {
-    color: var(--light-gray);
+    color: var(--nav-text-color);
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
     line-height: 1.6;
@@ -877,7 +877,7 @@ main {
 
 .service-item {
     position: relative;
-    background: var(--border-gradient-onyx);
+    background: var(--border-gradient-container);
     padding: 20px;
     border-radius: 14px;
     box-shadow: var(--shadow-2);
@@ -888,7 +888,7 @@ main {
     content: "";
     position: absolute;
     inset: 1px;
-    background: var(--bg-gradient-jet);
+    background: var(--bg-gradient-container);
     border-radius: inherit;
     z-index: -1;
 }
@@ -910,7 +910,7 @@ main {
 }
 
 .service-item-text {
-    color: var(--light-gray);
+    color: var(--nav-text-color);
     font-size: var(--fs-6);
     font-weight: var(--fw-3);
     line-height: 1.6;
@@ -963,7 +963,7 @@ main {
 }
 
 .testimonials-text {
-    color: var(--light-gray);
+    color: var(--nav-text-color);
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
     line-height: 1.6;
@@ -1025,7 +1025,7 @@ main {
 }
 
 .testimonials-modal {
-    background: var(--eerie-black-2);
+    background: var(--main-content-container);
     position: relative;
     padding: 15px;
     margin: 15px 12px;
@@ -1047,14 +1047,14 @@ main {
     position: absolute;
     top: 15px;
     right: 15px;
-    background: var(--onyx);
+    background: var(--single-container);
     border-radius: 8px;
     width: 32px;
     height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--white-2);
+    color: var(--text-color-1);
     font-size: 18px;
     opacity: 0.7;
 }
@@ -1086,13 +1086,13 @@ main {
 
 .modal-content time {
     font-size: var(--fs-6);
-    color: var(--light-gray-70);
+    color: var(--text-color-2);
     font-weight: var(--fw-300);
     margin-bottom: 10px;
 }
 
 .modal-content p {
-    color: var(--light-gray);
+    color: var(--nav-text-color);
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
     line-height: 1.6;
@@ -1185,7 +1185,7 @@ main {
 }
 
 .timeline-list span {
-    color: var(--vegas-gold);
+    color: var(--time-line-hi);
     font-weight: var(--fw-400);
     line-height: 1.6;
 }
@@ -1207,13 +1207,13 @@ main {
     left: -33px;
     height: 6px;
     width: 6px;
-    background: var(--text-gradient-yellow);
+    background: var(--text-gradient);
     border-radius: 50%;
     box-shadow: 0 0 0 4px var(--jet);
 }
 
 .timeline-text {
-    color: var(--light-gray);
+    color: var(--nav-text-color);
     font-weight: var(--fw-300);
     line-height: 1.6;
 }
@@ -1244,7 +1244,7 @@ main {
 }
 
 .skill .title-wrapper data {
-    color: var(--light-gray);
+    color: var(--nav-text-color);
     font-size: var(--fs-7);
     font-weight: var(--fw-300);
 }
@@ -1257,7 +1257,7 @@ main {
 }
 
 .skill-progress-fill {
-    background: var(--text-gradient-yellow);
+    background: var(--text-gradient);
     height: 100%;
     border-radius: inherit;
 }
@@ -1280,8 +1280,8 @@ main {
 }
 
 .filter-select {
-    background: var(--eerie-black-2);
-    color: var(--light-gray);
+    background: var(--main-content-container);
+    color: var(--nav-text-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1298,7 +1298,7 @@ main {
 }
 
 .select-list {
-    background: var(--eerie-black-2);
+    background: var(--main-content-container);
     position: absolute;
     top: calc(100% + 6px);
     width: 100%;
@@ -1319,8 +1319,8 @@ main {
 }
 
 .select-item button {
-    background: var(--eerie-black-2);
-    color: var(--light-gray);
+    background: var(--main-content-container);
+    color: var(--nav-text-color);
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
     text-transform: capitalize;
@@ -1330,7 +1330,7 @@ main {
 }
 
 .select-item button:hover {
-    --eerie-black-2: hsl(240, 2%, 20%);
+    --main-content-container: hsl(240, 2%, 20%);
 }
 
 .project-list {
@@ -1392,7 +1392,7 @@ main {
     --scale: 0.8;
 
     background: var(--jet);
-    color: var(--orange-yellow-crayola);
+    color: var(--highlight-color);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1431,7 +1431,7 @@ main {
 }
 
 .project-title {
-    color: var(--white-2);
+    color: var(--text-color-1);
     font-size: var(--fs-5);
     font-weight: var(--fw-400);
     text-transform: capitalize;
@@ -1439,7 +1439,7 @@ main {
 }
 
 .project-category {
-    color: var(--light-gray-70);
+    color: var(--text-color-2);
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
 }
@@ -1464,7 +1464,7 @@ main {
 
 .blog-post-item>a {
     position: relative;
-    background: var(--border-gradient-onyx);
+    background: var(--border-gradient-container);
     height: 100%;
     box-shadow: var(--shadow-4);
     border-radius: 16px;
@@ -1476,7 +1476,7 @@ main {
     position: absolute;
     inset: 1px;
     border-radius: inherit;
-    background: var(--eerie-black-1);
+    background: var(--icon-container);
     z-index: -1;
 }
 
@@ -1511,13 +1511,13 @@ main {
 }
 
 .blog-meta :is(.blog-category, time) {
-    color: var(--light-gray-70);
+    color: var(--text-color-2);
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
 }
 
 .blog-meta .dot {
-    background: var(--light-gray-70);
+    background: var(--text-color-2);
     width: 4px;
     height: 4px;
     border-radius: 4px;
@@ -1530,11 +1530,11 @@ main {
 }
 
 .blog-post-item>a:hover .blog-item-title {
-    color: var(--orange-yellow-crayola);
+    color: var(--highlight-color);
 }
 
 .blog-text {
-    color: var(--light-gray);
+    color: var(--nav-text-color);
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
     line-height: 1.6;
@@ -1585,7 +1585,7 @@ main {
 }
 
 .form-input {
-    color: var(--white-2);
+    color: var(--text-color-1);
     font-size: var(--fs-6);
     font-weight: var(--fw-400);
     padding: 13px 20px;
@@ -1599,7 +1599,7 @@ main {
 }
 
 .form-input:focus {
-    border-color: var(--orange-yellow-crayola);
+    border-color: var(--highlight-color);
 }
 
 textarea.form-input {
@@ -1621,8 +1621,8 @@ textarea.form-input::-webkit-resizer {
 .form-btn {
     position: relative;
     width: 100%;
-    background: var(--border-gradient-onyx);
-    color: var(--orange-yellow-crayola);
+    background: var(--border-gradient-container);
+    color: var(--highlight-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1640,7 +1640,7 @@ textarea.form-input::-webkit-resizer {
     content: "";
     position: absolute;
     inset: 1px;
-    background: var(--bg-gradient-jet);
+    background: var(--bg-gradient-container);
     border-radius: inherit;
     z-index: -1;
     transition: var(--transition-1);
@@ -1651,11 +1651,11 @@ textarea.form-input::-webkit-resizer {
 }
 
 .form-btn:hover {
-    background: var(--bg-gradient-yellow-1);
+    background: var(--bg-gradient-hover);
 }
 
 .form-btn:hover::before {
-    background: var(--bg-gradient-yellow-2);
+    background: var(--hover-highlight);
 }
 
 .form-btn:disabled {
@@ -1664,11 +1664,11 @@ textarea.form-input::-webkit-resizer {
 }
 
 .form-btn:disabled:hover {
-    background: var(--border-gradient-onyx);
+    background: var(--border-gradient-container);
 }
 
 .form-btn:disabled:hover::before {
-    background: var(--bg-gradient-jet);
+    background: var(--bg-gradient-container);
 }
 
 
@@ -2140,17 +2140,17 @@ textarea.form-input::-webkit-resizer {
     }
 
     .filter-item button {
-        color: var(--light-gray);
+        color: var(--nav-text-color);
         font-size: var(--fs-5);
         transition: var(--transition-1);
     }
 
     .filter-item button:hover {
-        color: var(--light-gray-70);
+        color: var(--text-color-2);
     }
 
     .filter-item button.active {
-        color: var(--orange-yellow-crayola);
+        color: var(--highlight-color);
     }
 
     /* portfolio and blog grid */
@@ -2229,6 +2229,7 @@ textarea.form-input::-webkit-resizer {
         position: relative;
         width: max-content;
         margin: auto;
+        transition: var(--transition-2);
     }
 
 
@@ -2324,11 +2325,11 @@ textarea.form-input::-webkit-resizer {
     }
 
     body::-webkit-scrollbar-track {
-        background: var(--smoky-black);
+        background: var(--background-color);
     }
 
     body::-webkit-scrollbar-thumb {
-        border: 5px solid var(--smoky-black);
+        border: 5px solid var(--background-color);
         background: hsla(0, 0%, 100%, 0.1);
         border-radius: 20px;
         box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
