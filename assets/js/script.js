@@ -123,7 +123,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 const projectModalBtns = document.querySelectorAll("[modalBtn]");
 const modals = document.querySelectorAll("[project-modal]")
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close");
+const span = document.getElementsByClassName("close");
 
 for (let i=0; i < projectModalBtns.length; i++) {
   projectModalBtns[i].onclick = function() {
