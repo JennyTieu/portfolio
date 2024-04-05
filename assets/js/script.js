@@ -127,10 +127,10 @@ var span = document.getElementsByClassName("close");
 
 for (let i=0; i < projectModalBtns.length; i++) {
   projectModalBtns[i].onclick = function() {
-    modal[i].style.display = "block";
+    modals[i].style.display = "block";
   }
 
   span[i].onclick = function() {
-    modal[i].style.display = "none";
+    modals[i].style.display = "none";
   }
 }
