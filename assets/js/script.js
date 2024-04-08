@@ -141,7 +141,7 @@ for (let i=0; i < projectModalBtns.length; i++) {
   }
 }
 
-let includes = document.getElementsByTagName('include');
+const includes = document.getElementsByTagName('include');
 for(var i=0; i<includes.length; i++){
     let include = includes[i];
     load_file(includes[i].attributes.src.value, function(text){

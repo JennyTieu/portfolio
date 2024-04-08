@@ -490,6 +490,10 @@ article {
     margin: 16px 0;
 }
 
+.big-icon{
+    fill: var(--highlight-color);
+}
+
 .icon-box {
     position: relative;
     background: var(--border-gradient-container);
