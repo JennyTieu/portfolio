@@ -490,9 +490,9 @@ article {
     margin: 16px 0;
 }
 
-.big-icon{
+.big-icons{
     color: var(--highlight-color);
-    width: 40px;
+    width: fit-content;
 }
 
 .icon-box {
