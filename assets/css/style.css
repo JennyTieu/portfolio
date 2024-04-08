@@ -491,7 +491,8 @@ article {
 }
 
 .big-icon{
-    fill: var(--highlight-color);
+    color: var(--highlight-color);
+    width: 40px;
 }
 
 .icon-box {
