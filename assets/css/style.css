@@ -183,6 +183,10 @@
 
 }
 
+a {
+    color: var(--highlight-color);
+}
+
 .element {
     display: flex;
     justify-content: flex-end;
@@ -490,7 +494,7 @@ article {
     margin: 16px 0;
 }
 
-.big-icons{
+.big-icons {
     color: var(--highlight-color);
     font-size: xxx-large;
 }
@@ -1447,6 +1451,15 @@ main {
     font-weight: var(--fw-300);
 }
 
+.portfolio-icon {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 
@@ -2178,6 +2191,10 @@ textarea.form-input::-webkit-resizer {
         margin-left: auto;
     }
 
+
+    .modal-content{
+        width: 100%;
+    }
 }
 
 
@@ -2464,70 +2481,102 @@ textarea.form-input::-webkit-resizer {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 180px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 6;
+    /* Sit on top */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
     position: relative;
     background-color: var(--main-content-container);
     margin: auto;
     padding: 0;
     border: 1px solid var(--single-container);
     width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
-  }
-  
-  /* Add Animation */
-  @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
-  }
-  
-  @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-  }
-  
-  /* The Close Button */
-  .close {
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
     color: var(--text-color-1);
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: var(--time-line-hi);
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  .modal-header {
+}
+
+.modal-header {
     padding: 2px 16px;
     background-color: var(--navbarcolor);
     color: var(--text-color-1);
-  }
-  
-  .modal-body {padding: 2px 16px;}
-  
-  .modal-footer {
+    text-align: center;
+}
+
+.modal-body {
+    padding: 20px
+}
+
+.modal-footer {
     padding: 2px 16px;
     background-color: var(--navbarcolor);
     color: var(--text-color-1);
-  }
+    text-align: center;
+}
+
+.app-description {
+    text-align: center;
+}
