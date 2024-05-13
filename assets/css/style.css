@@ -1457,6 +1457,7 @@ main {
     width: 200px;
     border-radius: 15px;
     display: block;
+    object-fit: contain;
     margin-left: auto;
     margin-right: auto;
 }
