@@ -520,17 +520,17 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a id="hanxiiiWebBtn" modalBtn>
 
-                <!-- <figure class="project-img">
+                <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure> -->
+                  <img src="./assets/images/dark_red_logo.png" alt="finance" loading="lazy">
+                </figure>
 
-                <h3 class="project-title">E-Commerce</h3>
+                <h3 class="project-title">Hanxiii - Fashion Shop</h3>
 
                 <p class="project-category">Web development</p>
 
@@ -538,17 +538,17 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+              <a id="hanxiiiAppBtn" modalBtn>
 
-                <!-- <figure class="project-img">
+                <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure> -->
+                  <img src="./assets/images/dark_red_logo.png" alt="Hanxiii Icon" loading="lazy">
+                </figure>
 
-                <h3 class="project-title">E-Commerce App</h3>
+                <h3 class="project-title">Hanxiii - Fashion Shop</h3>
 
                 <p class="project-category">Applications</p>
 
@@ -556,17 +556,17 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a id="luckycatBtn" modalBtn>
 
-                <!-- <figure class="project-img">
+                <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure> -->
+                  <img src="./assets/images/LuckyCatIcon.png" alt="Lucky Cat Icon" loading="lazy">
+                </figure>
 
-                <h3 class="project-title">Lucky Cat</h3>
+                <h3 class="project-title">Lucky Cat - Figurine Collector</h3>
 
                 <p class="project-category">Web development</p>
 
@@ -575,17 +575,17 @@
 
 
             <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+              <a id="rawrBtn" modalBtn>
 
-                <!-- <figure class="project-img">
+                <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure> -->
+                  <img src="./assets/images/RawrIcon.png" alt="RAWr Icon" loading="lazy">
+                </figure>
 
-                <h3 class="project-title">RAWr</h3>
+                <h3 class="project-title">RAWr - Artist App</h3>
 
                 <p class="project-category">Applications</p>
 
@@ -602,10 +602,10 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/froggerIcon.png" alt="frogger Icon" loading="lazy">
+                  <img src="./assets/images/froggerIcon.png" alt="Frogger Icon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Frogger</h3>
+                <h3 class="project-title">Frogger - Social Media App</h3>
 
                 <p class="project-category">Applications</p>
 
@@ -629,9 +629,76 @@
   </main>
 
   <!-- The Modal -->
+  <div id="hanxiiiWebModal" class="modal" project-modal>
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Hanxiii Web</h2>
+      </div>
+      <div class="modal-body">
+        <include src="./assets/views/HanxiiiWeb.html"></include>
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/JennyTieu/Hanxi">click here to see the code</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="hanxiiAppModal" class="modal" project-modal>
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Hanxiii App</h2>
+      </div>
+      <div class="modal-body">
+        <include src="./assets/views/HanxiiiApp.html"></include>
+      </div>
+      <div class="modal-footer">
+        <a href="#">click here to see the code</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="luckycatModal" class="modal" project-modal>
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Lucky Cat</h2>
+      </div>
+      <div class="modal-body">
+        <include src="./assets/views/LuckyCat.html"></include>
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/JennyTieu/ProjektB">click here to see the code</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="rawrModal" class="modal" project-modal>
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>RAWr</h2>
+      </div>
+      <div class="modal-body">
+        <include src="./assets/views/Rawr.html"></include>
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/JennyTieu/RAWr">click here to see the code</a>
+      </div>
+    </div>
+
+  </div>
+
   <div id="froggerModal" class="modal" project-modal>
 
-    <!-- Modal content -->
     <div class="modal-content">
       <div class="modal-header">
         <span class="close">&times;</span>
@@ -646,7 +713,6 @@
     </div>
 
   </div>
-
 
 
 
