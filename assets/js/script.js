@@ -134,11 +134,11 @@ for (let i=0; i < projectModalBtns.length; i++) {
     modals[i].style.display = "none";
   }
 
-  window.onclick = function(event) {
+  window.addEventListener("click", function(event) {
     if (event.target == modals[i]) {
       modals[i].style.display = "none";
     }
-  }
+  });
 }
 
 
