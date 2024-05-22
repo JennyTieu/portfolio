@@ -29,7 +29,7 @@
     --primary-color: #fff;
     --secondary-color: #333;
     --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
-    --bg-gradient-container: #EAE6EE;
+    --bg-gradient-container: #f0f0f0d7;;
     --bg-gradient-hover: linear-gradient(to bottom right, hsl(281, 100%, 71%) 0%, hsla(36, 100%, 69%, 0) 50%);
     --hover-highlight: linear-gradient(135deg, hsl(306.52deg 63.8% 91.71% / 25.1%) 0%, hsl(290.77deg 100% 83.01% / 0%) 59.86%), hsl(295.49deg 27.08% 91.56%);
     --border-gradient-container: 0;
