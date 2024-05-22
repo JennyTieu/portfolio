@@ -671,7 +671,11 @@ main {
 
 .avatar-box {
     background: var(--bg-gradient-onyx);
-    border-radius: 20px;
+    border-radius: 50%;
+}
+
+.avatar-box img{
+    border-radius: 50%;
 }
 
 .info-content .name {
@@ -1859,7 +1863,7 @@ textarea.form-input::-webkit-resizer {
     }
 
     .avatar-box {
-        border-radius: 30px;
+        border-radius: 50%;
     }
 
     .avatar-box img {
