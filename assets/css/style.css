@@ -693,6 +693,7 @@ main {
     font-weight: var(--fw-300);
     width: max-content;
     padding: 3px 12px;
+    margin-bottom: 5px;
     border-radius: 8px;
 }
 
@@ -908,7 +909,7 @@ main {
     margin-bottom: 10px;
 }
 
-.service-icon-box img {
+.service-icon-box ion-icon {
     margin: auto;
 }
 
@@ -1227,6 +1228,14 @@ main {
     color: var(--nav-text-color);
     font-weight: var(--fw-300);
     line-height: 1.6;
+}
+
+.education-list li{
+    list-style: disc;
+    color: var(--nav-text-color);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+    margin-left: 25px;
 }
 
 /* Experience */
@@ -1876,6 +1885,7 @@ textarea.form-input::-webkit-resizer {
 
     .info-content .title {
         padding: 5px 18px;
+        margin-bottom: 5px;
     }
 
     .info_more-btn {
@@ -2496,6 +2506,7 @@ textarea.form-input::-webkit-resizer {
 
     .info-content .title {
         margin: auto;
+        margin-bottom: 5px;
     }
 
     .info_more-btn {
@@ -2538,6 +2549,10 @@ textarea.form-input::-webkit-resizer {
        */
 
     .timeline-text {
+        max-width: 700px;
+    }
+
+    .education-list li{
         max-width: 700px;
     }
 
